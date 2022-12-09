@@ -59,5 +59,26 @@ class PhonebookRepositoryImplTest {
 
 
     }
+    @Test
+    public void deletePhoneBookFindByIdReturnNullPhonebook(){
+        //given that i have a new phone book repo
+        //when I save  a new phonebook
+        //and when i update
+        //assert that phonebook details has been updated
+        Phonebook amirahPhoneBook = new Phonebook();
+        amirahPhoneBook.setOwnerPhoneNumber("9900");
+        amirahPhoneBook.setOwnersName("Amirah");
+        phonebookRepository.save(amirahPhoneBook);
+        Phonebook rofiatPhoneBook = new Phonebook();
+        rofiatPhoneBook.setOwnerPhoneNumber("9908");
+        rofiatPhoneBook.setOwnersName("Rofiat");
+        phonebookRepository.save(rofiatPhoneBook);
+        phonebookRepository.delete(amirahPhoneBook);
+        phonebookRepository.delete(rofiatPhoneBook);
+        Phonebook savedPhonebook = phonebookRepository.findById("9908");
+        assertEquals(0, phonebookRepository.count());
+        assertNull(savedPhonebook);
+
+}
 }
 

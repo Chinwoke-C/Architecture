@@ -26,6 +26,9 @@ public class PhonebookRepositoryImpl implements PhonebookRepository{
         if(savedPhonebook == null) phonebooks.add(phonebook);
         else updateSavedPhoneBook(phonebook, savedPhonebook);
         return phonebook;
+//        phonebooks.add(phonebook);
+//
+//        return phonebook;
     }
 
     private void updateSavedPhoneBook(Phonebook phonebook, Phonebook savedPhonebook) {
@@ -36,6 +39,12 @@ public class PhonebookRepositoryImpl implements PhonebookRepository{
 
     @Override
     public void delete(Phonebook phonebook) {
+        //check for phonebook
+        //if it exists, I want to delete
+        // else, it doesn't exist
+        Phonebook savedPhoneBook = findById(phonebook.getOwnerPhoneNumber());
+        if (savedPhoneBook != null) phonebooks.remove(phonebook);
+        else throw new IllegalArgumentException("Contact does not exist");
 
     }
 
