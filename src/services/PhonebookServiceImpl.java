@@ -1,26 +1,21 @@
 package services;
 
 import data.models.Contact;
+import data.models.Phonebook;
+import data.repositories.PhonebookRepository;
+import data.repositories.PhonebookRepositoryImpl;
 
-public class PhonebookServiceImpl  implements PhonebookService{
-    @Override
-    public void register() {
-
-    }
-
-    @Override
-    public void addContact() {
-
-    }
-
-    @Override
-    public Contact findContact() {
-        return null;
-    }
+public class PhonebookServiceImpl  implements PhonebookService {
+    PhonebookRepository phonebookRepository = new PhonebookRepositoryImpl();
 
     @Override
     public void register(String ownersName, String ownersPhoneNumber) {
-
+        Phonebook savedPhonebook = phonebookRepository.findById(ownersPhoneNumber);
+        if (savedPhonebook != null) throw new IllegalArgumentException("User already exist");
+        Phonebook newPhonebook = new Phonebook();
+        newPhonebook.setOwnerPhoneNumber(ownersPhoneNumber);
+        newPhonebook.setOwnersName(ownersName);
+        phonebookRepository.save(newPhonebook);
     }
 
     @Override
@@ -34,12 +29,7 @@ public class PhonebookServiceImpl  implements PhonebookService{
     }
 
     @Override
-    public void delete() {
-
-    }
-
-    @Override
-    public void updateContact() {
-
+    public int countNumberOfUser() {
+        return phonebookRepository.count();
     }
 }
