@@ -1,2 +1,5 @@
-package data.repositories;public interface CommentRepository {
+package data.repositories;
+
+public interface CommentRepository  {
+//    Post writeComment();
 }

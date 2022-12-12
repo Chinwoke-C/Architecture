@@ -1,2 +1,4 @@
-package services;public interface CommentService {
+package services;
+
+public interface CommentService {
 }

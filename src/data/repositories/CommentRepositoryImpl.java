@@ -1,2 +1,4 @@
-package data.repositories;public class CommentRepositoryImpl {
+package data.repositories;
+
+public class CommentRepositoryImpl implements CommentRepository{
 }
