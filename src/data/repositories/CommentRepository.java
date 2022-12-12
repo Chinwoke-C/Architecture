@@ -1,5 +1,14 @@
 package data.repositories;
 
+import data.models.Comment;
+
+
+import java.util.List;
+
 public interface CommentRepository  {
-//    Post writeComment();
+    Comment write(Comment comment);
+    Comment findById(int id);
+    List<Comment> findAllComments();
+    long count();
+    void deleteCommentById(int id);
 }

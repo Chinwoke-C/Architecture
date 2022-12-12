@@ -9,8 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class PostRepositoryImplTest {
     PostRepository postRepository;
     @BeforeEach
-    void setUp() {
-        postRepository = new PostRepositoryImpl();
+    void setUp() {postRepository = new PostRepositoryImpl();
     }
     @Test
     public void saveNewPost_countShouldBeOne_Test(){
