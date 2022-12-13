@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4339e36-54d4-43a8-a9a3-28877704c3da" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/data/repositories/CommentRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/PostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/services/CommentServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repositories/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/CommentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/repositories/CommentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/CommentRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repositories/PostRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/PostRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/data/repositories/PostRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/data/repositories/PostRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/data/repositories/CommentRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/data/repositories/CommentRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/services/PostServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/services/PostServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -60,26 +63,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -89,8 +92,8 @@
       <recent name="services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CommentRepositoryImplTest.saveNewPost_updatePost_countIsOneTest">
-    <configuration name="CommentRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PostServiceImplTest.viewPost">
+    <configuration name="CommentRepositoryImplTest.deleteItem_countIsZeroTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ofofo" />
       <extension name="coverage">
         <pattern>
@@ -100,28 +103,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="data.repositories" />
       <option name="MAIN_CLASS_NAME" value="data.repositories.CommentRepositoryImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommentRepositoryImplTest.saveNewComment_OneCommentSavedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ofofo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="data.repositories.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="data.repositories" />
-      <option name="MAIN_CLASS_NAME" value="data.repositories.CommentRepositoryImplTest" />
-      <option name="METHOD_NAME" value="saveNewComment_OneCommentSavedTest" />
+      <option name="METHOD_NAME" value="deleteItem_countIsZeroTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommentRepositoryImplTest.saveNewComment_findByIdReturnsSavedCommentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommentRepositoryImplTest.delete_Exception_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ofofo" />
       <extension name="coverage">
         <pattern>
@@ -131,7 +119,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="data.repositories" />
       <option name="MAIN_CLASS_NAME" value="data.repositories.CommentRepositoryImplTest" />
-      <option name="METHOD_NAME" value="saveNewComment_findByIdReturnsSavedCommentTest" />
+      <option name="METHOD_NAME" value="delete_Exception_test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,17 +141,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostRepositoryImplTest.saveNewPost_findById_shouldReturnSavedPostTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PostServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ofofo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="data.repositories.*" />
+          <option name="PATTERN" value="services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="data.repositories" />
-      <option name="MAIN_CLASS_NAME" value="data.repositories.PostRepositoryImplTest" />
-      <option name="METHOD_NAME" value="saveNewPost_findById_shouldReturnSavedPostTest" />
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.PostServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostServiceImplTest.viewPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ofofo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.PostServiceImplTest" />
+      <option name="METHOD_NAME" value="viewPost" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PostServiceImplTest.viewPost" />
+        <item itemvalue="JUnit.PostServiceImplTest" />
+        <item itemvalue="JUnit.CommentRepositoryImplTest.delete_Exception_test" />
+        <item itemvalue="JUnit.CommentRepositoryImplTest.deleteItem_countIsZeroTest" />
         <item itemvalue="JUnit.CommentRepositoryImplTest.saveNewPost_updatePost_countIsOneTest" />
-        <item itemvalue="JUnit.CommentRepositoryImplTest.saveNewComment_findByIdReturnsSavedCommentTest" />
-        <item itemvalue="JUnit.CommentRepositoryImplTest.saveNewComment_OneCommentSavedTest" />
-        <item itemvalue="JUnit.PostRepositoryImplTest.saveNewPost_findById_shouldReturnSavedPostTest" />
-        <item itemvalue="JUnit.CommentRepositoryImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +191,8 @@
       <option name="presentableId" value="Default" />
       <updated>1670840343955</updated>
       <workItem from="1670840344367" duration="14850000" />
-      <workItem from="1670860688864" duration="18186000" />
+      <workItem from="1670860688864" duration="20898000" />
+      <workItem from="1670922905861" duration="4626000" />
     </task>
     <servers />
   </component>

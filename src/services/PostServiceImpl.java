@@ -29,7 +29,7 @@ public class PostServiceImpl implements PostService{
 
     @Override
     public Post viewPost(int id) {
-        return null;
+        return postRepository.findById(id);
     }
 
     @Override

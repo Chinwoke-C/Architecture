@@ -49,6 +49,12 @@ public class CommentRepositoryImpl implements CommentRepository{
 
     @Override
     public void deleteCommentById(int id) {
+        for (Comment comment:commentDb) {
+            if (comment.getId()==id){
+                commentDb.remove(comment);
+            break;
+            }
+        }
 
     }
 }

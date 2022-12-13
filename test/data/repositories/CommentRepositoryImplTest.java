@@ -45,5 +45,37 @@ public class CommentRepositoryImplTest {
         assertEquals(1,commentRepo.count());
     }
     @Test
-    public void deleteItem_countIsZeroTest(){}
+    public void deleteItem_countIsZeroTest(){
+        Comment comment = new Comment();
+        comment.setComment("Cool write-up");
+        commentRepo.write(comment);
+        assertEquals(1,commentRepo.count());
+        Comment comment2 = new Comment();
+        commentRepo.write(comment2);
+        Comment comment3= new Comment();
+        commentRepo.write(comment3);
+        Comment comment4 = new Comment();
+        commentRepo.write(comment4);
+
+        commentRepo.deleteCommentById(4);
+        assertEquals(3,commentRepo.count());
+    }
+    @Test
+    public void delete_Exception_test(){
+        Comment comment1 = new Comment();
+        Comment comment2= new Comment();
+        Comment comment3 = new Comment();
+        Comment comment4 = new Comment();
+
+        commentRepo.write(comment1);
+        commentRepo.write(comment2);
+        commentRepo.write(comment3);
+
+        commentRepo.deleteCommentById(1);
+        assertEquals(2,commentRepo.count());
+        commentRepo.deleteCommentById(2);
+        assertEquals(1, commentRepo.count());
+
+    }
+
 }
