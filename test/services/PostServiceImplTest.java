@@ -1,7 +1,9 @@
 package services;
 
-import data.models.Post;
-import dtos.requests.CreatePostRequest;
+import africa.ofofo.data.models.Post;
+import africa.ofofo.dtos.requests.CreatePostRequest;
+import africa.ofofo.services.PostService;
+import africa.ofofo.services.PostServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

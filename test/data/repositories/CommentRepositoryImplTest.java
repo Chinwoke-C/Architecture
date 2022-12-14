@@ -1,6 +1,8 @@
 package data.repositories;
 
-import data.models.Comment;
+import africa.ofofo.data.models.Comment;
+import africa.ofofo.data.repositories.CommentRepository;
+import africa.ofofo.data.repositories.CommentRepositoryImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

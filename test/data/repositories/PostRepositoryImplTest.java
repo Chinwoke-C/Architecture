@@ -1,6 +1,8 @@
 package data.repositories;
 
-import data.models.Post;
+import africa.ofofo.data.models.Post;
+import africa.ofofo.data.repositories.PostRepository;
+import africa.ofofo.data.repositories.PostRepositoryImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
